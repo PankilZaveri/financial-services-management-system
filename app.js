@@ -16,7 +16,7 @@ const transactions = []; // { id, accountId, type: 'deposit'|'withdraw', amount,
 // escape user input so HTML/script tags render as text, not markup
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
-const sha = process.env.GIT_SHA || process.env.RENDER_GIT_COMMIT || 'local';
+const sha = process.env.RENDER_GIT_COMMIT || process.env.GIT_SHA || 'local';
 const commit = sha.slice(0, 7);
 
 function findAccount(id) {
