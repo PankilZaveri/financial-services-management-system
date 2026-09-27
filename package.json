@@ -1,7 +1,7 @@
 {
   "name": "fsms",
   "version": "1.0.0",
-  "description": "",
+  "description": "A dynamic financial services management system with account ledger, CI/CD pipeline, and automated tests",
   "main": "app.js",
   "directories": {
     "test": "test"
@@ -21,3 +21,4 @@
     "eslint": "^8.57.1"
   }
 }
+
