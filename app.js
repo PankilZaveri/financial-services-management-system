@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
     body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 16px; }
     table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
     th, td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 14px; }
-    th { background: #f4f4f4; }
+    th { background: #e8f0fe; }
     form { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
     input, select, button { padding: 8px; font-size: 14px; }
     button { cursor: pointer; }
@@ -131,3 +131,4 @@ app.get('/api/transactions', (req, res) => res.json(transactions));
 app.get('/health', (req, res) => res.json({ status: 'ok', commit }));
 
 module.exports = app;
+
