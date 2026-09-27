@@ -9,6 +9,7 @@ const accounts = [
   { id: 1, name: 'Asha Kulkarni', balance: 5000 },
   { id: 2, name: 'Ravi Patil', balance: 12000 },
   { id: 3, name: 'Meera Shah', balance: 800 },
+   { id: 4, name: 'Karan Mehta', balance: 3000 },
 ];
 
 const transactions = []; // { id, accountId, type: 'deposit'|'withdraw', amount, balanceAfter }
