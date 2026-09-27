@@ -104,6 +104,7 @@ app.post('/transactions', (req, res) => {
   }
   if (!amt || amt <= 0 || Number.isNaN(amt)) {
     return res.status(400).send('Amount must be a positive number');
+     if (amt > 10000000) { return res.status(400).send('Amount exceeds maximum allowed limit'); }
   }
   if (type === 'withdraw' && amt > account.balance) {
     return res.status(400).send('Insufficient balance');
