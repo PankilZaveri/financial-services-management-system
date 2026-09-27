@@ -97,7 +97,7 @@ app.post('/transactions', (req, res) => {
   const amt = Number(amount);
 
   if (!account) {
-    return res.status(400).send('Unknown accounts');
+    return res.status(400).send('Unknown account');
   }
   if (!['deposit', 'withdraw'].includes(type)) {
     return res.status(400).send('Transaction type must be deposit or withdraw');
