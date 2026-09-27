@@ -85,7 +85,7 @@ app.get('/', (req, res) => {
     ${txRows}
   </table>
 
-  <footer>commit ${commit}</footer>
+  <footer>commit ${commit} &mdash; Built for CCA2 Assignment</footer>
 </body>
 </html>`);
 });
@@ -131,4 +131,5 @@ app.get('/api/transactions', (req, res) => res.json(transactions));
 app.get('/health', (req, res) => res.json({ status: 'ok', commit }));
 
 module.exports = app;
+
 
