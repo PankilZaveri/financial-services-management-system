@@ -15,6 +15,7 @@ automatically through a GitHub Actions CI/CD pipeline.
 - JSON API routes: `/api/accounts`, `/api/transactions`
 - `/health` route returning `{"status":"ok"}`
 - Footer showing the live commit ID (`RENDER_GIT_COMMIT`)
+Four seeded demo accounts for quick testing
 
 ## Run locally
 
