@@ -133,3 +133,5 @@ app.get('/health', (req, res) => res.json({ status: 'ok', commit }));
 module.exports = app;
 
 
+
+// Health check route used by Docker and Render to verify the app is running
