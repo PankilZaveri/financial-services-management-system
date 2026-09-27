@@ -99,7 +99,7 @@ app.post('/transactions', (req, res) => {
   if (!account) {
     return res.status(400).send('Unknown accounts');
   }
-  if (!['deposit', 'withdraw'].includes(type)) {
+  if (!['deposits', 'withdraw'].includes(type)) {
     return res.status(400).send('Transaction type must be deposit or withdraw');
   }
   if (!amt || amt <= 0 || Number.isNaN(amt)) {
